@@ -1,0 +1,145 @@
+#Modules Imported Start Below
+import time
+
+#Function Definitions Start Below
+def mainopt1():
+    while True:
+        print('                    𝗛𝗼𝘂𝘀𝗲𝗵𝗼𝗹𝗱 𝗘𝘅𝗽𝗲𝗻𝗱𝗶𝘁𝘂𝗿𝗲𝘀                    ')
+        print(""" 
+              M E N U
+        (1) View Current Expenditures
+        (2) Add new Expenditure
+        (3) Edit existing Expenditures
+        (4) Exit to Main Menu
+        """)
+        try:
+            mch=int(input("Please enter your choice: "))
+            if mch==1:
+                pass
+            elif mch==2:
+                pass
+            elif mch==3:
+                pass
+            elif mch==4:
+                print("")
+                print("Returning to Main Menu")
+                time.sleep(0.25)
+                print("...")
+                time.sleep(0.5)
+                break
+            else:
+                print("Incorrect input! Please try again.")
+        except:
+            print("Incorrect input! Please try again.")
+            
+            
+def mainopt2():
+    while True:    
+        print("          𝗜𝗻𝘃𝗲𝘀𝘁𝗺𝗲𝗻𝘁𝘀          ")
+        print(""" 
+              M E N U
+        (1) View Current Investments
+        (2) Add definitions for new Investments
+        (3) Edit existing Investments
+        (4) Exit to Main Menu
+        """)
+        try:
+            mch=int(input("Please enter your choice: "))
+            if mch==1:
+                pass
+            elif mch==2:
+                pass
+            elif mch==3:
+                pass
+            elif mch==4:
+                print("")
+                print("Returning to Main Menu")
+                time.sleep(0.25)
+                print("...")
+                time.sleep(0.5)
+                break
+            else:
+                print("Incorrect input! Please try again.")
+        except:
+            print("Incorrect input! Please try again.")
+            
+def mainopt3():
+    while True:    
+        print("                𝗜𝗻𝗰𝗼𝗺𝗲 𝗜𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻                ")
+        print(""" 
+              M E N U
+        (1) View Current Income Information
+        (2) Edit existing Information
+        (3) Exit to Main Menu
+        """)
+        try:
+            mch=int(input("Please enter your choice: "))
+            if mch==1:
+                pass
+            elif mch==2:
+                pass
+            elif mch==3:
+                print("")
+                print("Returning to Main Menu")
+                time.sleep(0.25)
+                print("...")
+                time.sleep(0.5)
+                break
+            else:
+                print("Incorrect input! Please try again.")
+        except:
+            print("Incorrect input! Please try again.")
+            
+
+def mainopt4():
+    print("      𝗣𝗿𝗼𝗳𝗶𝗹𝗲      ")
+    print(""" 
+          M E N U
+    (1) View Information related to current Profile.
+    (2) Edit existing Profile Information
+    (3) Exit to Main Menu
+    """)
+
+
+#Program Starts Below
+while True:
+    print("""
+        WELCOME TO THE FINANCIAL BINDER
+    How may we help you today?
+        
+        (1) Go to 𝗛𝗼𝘂𝘀𝗲𝗵𝗼𝗹𝗱 𝗘𝘅𝗽𝗲𝗻𝗱𝗶𝘁𝘂𝗿𝗲𝘀.
+        
+        (2) Go to 𝗜𝗻𝘃𝗲𝘀𝘁𝗺𝗲𝗻𝘁𝘀.
+        
+        (3) Go to 𝗜𝗻𝗰𝗼𝗺𝗲 𝗜𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻.
+        
+        (4) Go to 𝗣𝗿𝗼𝗳𝗶𝗹𝗲.
+        
+        (5) 🆀🆄🅸🆃
+       
+    """)
+    try:
+        mmenuopt=int(input("> "))
+        if mmenuopt==1:
+            mainopt1()
+        elif mmenuopt==2:
+            mainopt2()
+        elif mmenuopt==3:
+            mainopt3()
+        elif mmenuopt==4:
+            mainopt4()
+        elif mmenuopt==5:
+            time.sleep(0.5)
+            print(" ")
+            print("Thank you for using The Financial Binder.")
+            print(" ")
+            time.sleep(1)
+            break
+        else:
+            print(" ")
+            print("Please input any of the displayed options")
+            print(" ")
+    except:
+        print(" ")
+        print("Please input any of the displayed options")
+        print(" ")

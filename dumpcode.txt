@@ -1,0 +1,49 @@
+'''
+def addinfo2():
+    print("Please enter the amount you want to add to Investments")
+    time.sleep(0.25)
+    value=float(input("> ₹"))
+    time.sleep(0.5)
+    print("Please enter any information you would like to add for this transaction")
+    print("LESS THAN 200 Characters")
+    time.sleep(0.25)
+    info=input("> ")
+    give="INSERT INTO homeexp VALUES(%s,%s)" 
+    mycursor.execute(give,(info,value))
+    dbs.commit()
+    time.sleep(0.25)
+    print(mycursor.rowcount,"Records Inserted")
+
+#for Income Information
+def viewinfo3():
+    give="SELECT * FROM %s" 
+    mycursor.execute(give,(dbname,))
+    data=mycursor.fetchall()
+    if data==[]:
+        print("No data present in Database!")
+        time.sleep(0.25)
+    else:
+        #sno=data[0]
+        info=data[0]
+        value=data[1]
+        #print("Serial Number:",sno)
+        print("Information",info)
+        print("Value:",value)
+
+def addinfo3(): 
+    print("Please enter the amount you want to add to Income Information")
+    time.sleep(0.25)
+    value=float(input("> ₹"))
+    time.sleep(0.5)
+    print("Please enter any information you would like to add for this transaction")
+    print("LESS THAN 200 Characters")
+    time.sleep(0.25)
+    info=input("> ")
+    mycursor.execute("INSERT INTO income VALUES(",info,value,")")
+    dbs.commit()
+    time.sleep(0.25)
+    print(mycursor.rowcount,"Records Inserted")
+
+def editinfo3():
+    pass
+'''
